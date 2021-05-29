@@ -1,0 +1,26 @@
+{
+    "python.pythonPath": "env/bin/python",
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.codeActionsOnSave": [
+            "source.organizeImports",
+            "source.fixAll"
+        ],
+        "editor.wordBasedSuggestions": false
+    },
+    "editor.formatOnSave": true,
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "120"
+    ],
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportGeneralTypeIssues": "warning"
+    },
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--enable=W0614"
+    ]
+}
